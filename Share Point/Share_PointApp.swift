@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct Share_PointApp: App {
+    
+    init() {
+            FirebaseApp.configure() // Configure Firebase here
+        }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
